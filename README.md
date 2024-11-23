@@ -98,4 +98,34 @@ export default defineConfig({
    ```bash
    npm run dev
 
+
+## 🤝 Contributing
+
+1. **Fork the repository.**
+
+2. **Create a new branch:**
+
+   ```bash
+   git checkout -b feature-name
+
+   ```
+
+3. **Make your changes**
+
+4. **Commit your changes:**
+
+   ```bash
+   git commit -m 'Add some feature'
+
+   ```
+
+5. **Push to the branch:**
+
+   ```bash
+   git push origin feature-name
+
+   ```
+
+6. **Open a pull request.**
+
    
