@@ -80,6 +80,14 @@ export default defineConfig({
     },
   },
 });
+```
+
+### Why this is important:
+
+- This configuration ensures that all requests made to `/socket.io` in the frontend are redirected to the backend server running on `localhost:2000` (or the port you configured for your backend).
+- It eliminates the need to hardcode URLs during development and enables smooth integration of WebSocket and REST API requests.
+- When deploying to production, you should update the frontend to use the actual backend server's URL, removing the need for this proxy configuration.
+
 
 
    
