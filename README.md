@@ -11,7 +11,7 @@ Chatty is a real-time chat application designed for seamless communication. It o
 - **Dynamic Chat Rooms**: Join or create chat rooms for group discussions.
 - **User-Friendly Interface**: Built with **React** for a sleek and responsive design.
 - **Type Safety**: Developed with **TypeScript** to ensure robust and maintainable code.
-- **Scalable Backend**: A Node.js + Express backend supports API endpoints and real-time connections.
+- **Scalable Backend**: A Node.js + Express backend supports real-time connections.
 
 ---
 
