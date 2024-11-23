@@ -48,3 +48,46 @@ Chatty is a real-time chat application designed for seamless communication. It o
    ```bash
    git clone https://github.com/your-username/chatty.git
    cd chatty
+
+2. **Install Dependencies: For both frontend and backend:**:
+   ```bash
+   npm install
+
+3. **Set Up Environment Variables: Create a .env file in the backend directory with the following variables**:
+   ```bash
+   MONGO_URI=your-mongodb-connection-string
+   JWT_SECRET=your-secret-key
+   PORT=2000
+
+## Note: Configuring Proxy for Development
+Before running the development server, ensure you have configured a proxy in the `vite.config.ts` file to redirect API and WebSocket requests to the backend server. This setup allows seamless communication between the frontend and backend during development.
+
+In the `vite.config.ts` file, the proxy should be configured : 
+    ```javascript
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    proxy: {
+      "/socket.io": {
+        target: "http://localhost:2000", // Backend server address
+        changeOrigin: true,
+        ws: true, // Enable WebSocket proxying
+      },
+    },
+  },
+});   
+
+
+   
+4. **Run the Backend**:
+   ```bash
+   npm run dev
+5. **Run the Frontend: Navigate to the frontend directory and start the app**:
+   ```bash
+   npm run dev
+
+   
