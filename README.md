@@ -63,7 +63,7 @@ Chatty is a real-time chat application designed for seamless communication. It o
 Before running the development server, ensure you have configured a proxy in the `vite.config.ts` file to redirect API and WebSocket requests to the backend server. This setup allows seamless communication between the frontend and backend during development.
 
 In the `vite.config.ts` file, the proxy should be configured : 
-    ```javascript
+```javascript
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
@@ -79,7 +79,7 @@ export default defineConfig({
       },
     },
   },
-});   
+});
 
 
    
